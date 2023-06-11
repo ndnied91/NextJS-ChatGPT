@@ -21,3 +21,20 @@ body,
     opacity: 1;
   }
 }
+
+.name {
+  display: flex;
+  justify-content: center;
+  padding-top: 170px;
+  position: sticky;
+}
+
+.cat {
+  transition: transform 0.5s;
+}
+
+.cat:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  background-color: grey;
+}
