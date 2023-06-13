@@ -1,10 +1,8 @@
 {
   "messageHistory": {
-    "u1-2023-06-04T23:49:47.253Z": [],
-    "u3-2023-06-04T23:49:47.253Z": [
-      "Human: What is your name?\n",
-      "Ron Maroon: My name is Ron Maroon.\n"
-    ],
-    "u2-2023-06-04T23:49:47.253Z": []
+    "u1": [
+      "Human: what is your name\n",
+      "Dr. Benjamin Franklin Gates BA: My name is Dr. Benjamin Franklin Gates, but most people just call me Ben.\n"
+    ]
   }
 }

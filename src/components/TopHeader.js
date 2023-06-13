@@ -19,9 +19,8 @@ export default function TopHeader() {
   };
 
   return (
-    <h1 className="flex justify-center items-center ">
-      <div> Learn about a different topic </div>
-
+    <h1 className="flex justify-center items-center">
+      <div className="sub-title"> Learn about a different topic </div>
       <div className="flex">{renderStacks()}</div>
     </h1>
   );

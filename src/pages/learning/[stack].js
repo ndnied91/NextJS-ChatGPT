@@ -5,12 +5,10 @@ import Message from '@/components/Message';
 import Prompt from '@/components/Prompt';
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
-
 import useUser from '@/hooks/useUser';
 
 export default function Stack({ stack, stackKey }) {
   const [messages, setMessages] = useState([]);
-  const [activeSession, setActiveSession] = useState('');
   const { user } = useUser();
   const chatRef = useRef(null);
 
@@ -18,15 +16,8 @@ export default function Stack({ stack, stackKey }) {
     const cleanChatHistory = async () => {
       await fetch('/api/completion', { method: 'DELETE' });
     };
-
     cleanChatHistory();
   }, []);
-
-  useEffect(() => {
-    if (user) {
-      setActiveSession(user.uid);
-    }
-  }, [user]);
 
   useEffect(() => {
     chatRef.current.scrollTo(0, chatRef.current.scrollHeight);
@@ -75,18 +66,6 @@ export default function Stack({ stack, stackKey }) {
     } else {
       console.error(json?.error?.message);
     }
-  };
-
-  const handleSessionChange = async (e) => {
-    const session = e.target.value;
-
-    if (!session) {
-      console.log('not valid session');
-      return;
-    }
-
-    await fetch(`/api/completion?uid=${session}`, { method: 'PUT' });
-    setActiveSession(session);
   };
 
   return (

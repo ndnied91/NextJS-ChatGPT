@@ -16,7 +16,9 @@ export default withNextSession(async (req, res) => {
     const body = req.body;
     const { stack } = req.query;
     const prompt = body.prompt || '';
-    const { user } = req.session;
+    const user = { uid: 'u1' };
+    console.log('user');
+    console.log(user);
 
     if (!configuration.apiKey) {
       return res

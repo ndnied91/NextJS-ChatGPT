@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+$color-primary: black;
+
 html,
 body,
 #__next {
@@ -36,5 +38,12 @@ body,
 .cat:hover {
   transform: scale(1.1);
   z-index: 1;
-  background-color: grey;
 }
+
+.title {
+  margin-bottom: 25px;
+  font-weight: 800;
+  color: $color-primary;
+}
+
+

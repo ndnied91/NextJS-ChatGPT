@@ -1,16 +1,16 @@
 {
   "history": {
     "href": "/learning/history",
-    "logo": "/Dr.webp",
-    "info": "Alan Grant is a paleontologist who is dedicated to his research, which includes a focus on velociraptors. He believes that dinosaurs are closely related to birds, and also theorizes that the vision of a Tyrannosaurus is based on movement. Grant has written several books on dinosaurs, as referenced in the first novel.",
+    "logo": "/Ben_Gates.webp",
+    "info": "Dr. Benjamin Franklin Gates BA., MEng., PhD., is an American treasure hunter and cryptologist, famous for finding the Templar Treasure. He is a descendant of Benjamin Franklin.",
     "docs": ["https://react.dev/"],
     "name": "History",
     "hoverClass": "hover:border-blue-300"
   },
   "science": {
     "href": "/learning/science",
-    "logo": "/isaac.jpeg",
-    "info": "Born in 1643 in Woolsthorpe, England, Sir Isaac Newton began developing his theories on light, calculus and celestial mechanics while on break from Cambridge University. Years of research culminated with the 1687 publication of “Principia,” a landmark work that established the universal laws of motion and gravity.",
+    "logo": "/doc.jpeg",
+    "info": "A scientist by trade, Doc was a 'student of all sciences' who spent much of his time inventing. He was the son of Judge Erhardt Brown (whose birth name was Erhardt Von Braun). He usually had a pet dog – in 1955, his dog was named Copernicus after Nicolaus Copernicus, the third in a line of pets named after famous scientists, and by 1985 his dog was named Einstein after Albert Einstein.",
     "docs": ["https://vuejs.org/"],
     "name": "Science",
     "hoverClass": "hover:border-green-500"
